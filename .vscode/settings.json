@@ -1,0 +1,37 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+
+  // Disable quick suggestions everywhere
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+
+  // Disable suggestions on typing trigger characters like . or (
+  "editor.suggestOnTriggerCharacters": false,
+
+  // Disable inline ghost text
+  "editor.inlineSuggest.enabled": false,
+
+  // Disable parameter hints popups
+  "editor.parameterHints.enabled": false,
+
+  // Disable word-based suggestions from the same file
+  "editor.wordBasedSuggestions": false,
+
+  // Disable Emmet completions
+  "emmet.useInlineCompletions": false,
+
+  // Disable Copilot everywhere
+  "github.copilot.enable": {
+    "cls": false,
+    "apex": false,
+    "*": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false
+}
