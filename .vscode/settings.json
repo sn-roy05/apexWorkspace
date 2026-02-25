@@ -22,7 +22,7 @@
   "editor.parameterHints.enabled": false,
 
   // Disable word-based suggestions from the same file
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
 
   // Disable Emmet completions
   "emmet.useInlineCompletions": false,
@@ -33,5 +33,6 @@
     "apex": false,
     "*": false
   },
-  "github.copilot.nextEditSuggestions.enabled": false
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "xml.preferences.showSchemaDocumentationType": "none"
 }
