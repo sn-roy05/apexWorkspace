@@ -11,7 +11,7 @@ public class UpdateParentAccount implements Queueable {
             a.ParentId= parentId;
         }
         update accList;
-    }
+    } 
 }
 //to call this run below code
 //List<Account> acc=[SELECT Id from Account WHERE BillingState = 'NY'];

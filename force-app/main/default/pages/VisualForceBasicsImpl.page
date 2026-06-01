@@ -1,0 +1,50 @@
+<apex:page showHeader="false" sidebar="false" standardController="Contact">
+    <!-- This would be the entire scope of Vf page-->
+    <!-- Merge Field {! } --Notation -->
+    <div>
+    {! TODAY()}
+    <br/>
+    Hello, {! $User.FirstName + ' ' + $User.LastName} from {! $User.Country} 
+    </div> 
+    
+    <!--conditional information display-->
+    <br/>
+    {!IF($User.isActive, 'Namaste', 'Hello') }
+    <apex:pageBlock title="Block One">
+        <apex:pageBlockSection title="Section Display" columns="3" >
+            <apex:pageBlockSectionItem >Section One  <apex:pageBlockSectionItem />
+            </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- id= 003gK000008rye9QAA-->
+    {!Contact.FirstName}
+    {!Contact.LastName}
+    {!Contact.Phone}
+            
+    <!--
+    Static page example below
+    <apex:pageBlock title="Block One">
+        <apex:pageBlockSection title="Section Display" columns="3" >
+    <apex:pageBlockSectionItem >
+        Section One
+        </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem >
+        Section Two
+        </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem >
+        Section Three
+        </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Section Display" columns="2" >
+    <apex:pageBlockSectionItem >
+        Section One
+        </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem >
+        Section Two
+        </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    -->
+    
+</apex:page>

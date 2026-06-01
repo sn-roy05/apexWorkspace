@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Component Library Example">
+        <div class="slds-grid slds-wrap ">
+            <div class="slds-col slds-size_4-of-12 slds-p-horizontal_x-small">
+                <lightning-input type="text" label="Name" required></lightning-input>
+            </div>
+            <div class="slds-col slds-size_4-of-12 slds-p-horizontal_x-small">
+                <lightning-input type="number" label="Age" required></lightning-input>
+            </div>
+            <div class="slds-col slds-size_4-of-12 slds-p-horizontal_x-small">
+                <lightning-input type="number" label="Phone" required></lightning-input>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-align_absolute-center slds-p-vertical_small">
+                <lightning-button variant="brand" label="Submit" onclick={handleClick}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
